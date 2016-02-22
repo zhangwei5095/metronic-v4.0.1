@@ -1,0 +1,1665 @@
+<div class="page-content-wrapper">
+    <div class="page-content" style="min-height:285px">
+        <!-- BEGIN PAGE HEAD -->
+        <!-- ngInclude: 'tpl/page-head.html' --><div class="page-head ng-scope" data-ng-controller="PageHeadController" data-ng-include="'tpl/page-head.html'"><!-- BEGIN PAGE TITLE -->
+        <div class="page-title ng-scope">
+            <h1>
+                <span data-ng-bind="$state.current.data.pageTitle" class="ng-binding">Admin Dashboard Template</span>
+                <small data-ng-bind="$state.current.data.pageSubTitle" class="ng-binding"></small>
+            </h1>
+        </div>
+        <!-- END PAGE TITLE -->
+        <!-- BEGIN PAGE TOOLBAR -->
+        <div class="page-toolbar ng-scope">
+            <!-- BEGIN THEME PANEL -->
+            <div class="btn-group btn-theme-panel">
+                <a data-toggle="dropdown" class="btn dropdown-toggle" href="javascript:;">
+                    <i class="icon-settings"></i>
+                </a>
+                <div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <h3>THEME</h3>
+                            <ul class="theme-colors">
+                                <li data-theme="default" class="theme-color theme-color-default active">
+                                    <span class="theme-color-view"></span>
+                                    <span class="theme-color-name">Dark Header</span>
+                                </li>
+                                <li data-theme="light" class="theme-color theme-color-light">
+                                    <span class="theme-color-view"></span>
+                                    <span class="theme-color-name">Light Header</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-12 seperator">
+                            <h3>LAYOUT</h3>
+                            <ul class="theme-settings">
+                                <li> Theme Style
+                                    <select class="layout-style-option form-control input-small input-sm">
+                                        <option selected="selected" value="square">Square corners</option>
+                                        <option value="rounded">Rounded corners</option>
+                                    </select>
+                                </li>
+                                <li> Layout
+                                    <select class="layout-option form-control input-small input-sm">
+                                        <option selected="selected" value="fluid">Fluid</option>
+                                        <option value="boxed">Boxed</option>
+                                    </select>
+                                </li>
+                                <li> Header
+                                    <select class="page-header-option form-control input-small input-sm">
+                                        <option selected="selected" value="fixed">Fixed</option>
+                                        <option value="default">Default</option>
+                                    </select>
+                                </li>
+                                <li> Top Dropdowns
+                                    <select class="page-header-top-dropdown-style-option form-control input-small input-sm">
+                                        <option value="light">Light</option>
+                                        <option selected="selected" value="dark">Dark</option>
+                                    </select>
+                                </li>
+                                <li> Sidebar Mode
+                                    <select class="sidebar-option form-control input-small input-sm">
+                                        <option value="fixed">Fixed</option>
+                                        <option selected="selected" value="default">Default</option>
+                                    </select>
+                                </li>
+                                <li> Sidebar Menu
+                                    <select class="sidebar-menu-option form-control input-small input-sm">
+                                        <option selected="selected" value="accordion">Accordion</option>
+                                        <option value="hover">Hover</option>
+                                    </select>
+                                </li>
+                                <li> Sidebar Position
+                                    <select class="sidebar-pos-option form-control input-small input-sm">
+                                        <option selected="selected" value="left">Left</option>
+                                        <option value="right">Right</option>
+                                    </select>
+                                </li>
+                                <li> Footer
+                                    <select class="page-footer-option form-control input-small input-sm">
+                                        <option value="fixed">Fixed</option>
+                                        <option selected="selected" value="default">Default</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END THEME PANEL -->
+        </div>
+        <!-- END PAGE TOOLBAR --></div>
+        <!-- END PAGE HEAD -->
+        <!-- BEGIN ACTUAL CONTENT -->
+        <!-- uiView:  --><div class="fade-in-up ng-scope" ui-view=""><!-- BEGIN PAGE BREADCRUMB -->
+        <ul class="page-breadcrumb breadcrumb ng-scope">
+            <li>
+                <a href="#">Home</a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li class="active"> Dashboard </li>
+        </ul>
+        <!-- END PAGE BREADCRUMB -->
+        <!-- BEGIN MAIN CONTENT -->
+        <div ng-controller="DashboardController" class="ng-scope">
+            <div class="note note-info">
+                <h3>Meet Metronic AngularJS Version!
+                    <span data-close="note" class="close"></span>
+                </h3>
+                <p> AngularJS version of Metronic gives an extremely fast browsing experience to users. It uses lazy loading of dependency resources(modules, controllers, templates, jquery plugins, javascripts and even css files) on demand. UI-Router is used for
+                    flexible routing with nested views. UI Bootstrap enables using all Bootstrap framework components with pure AngularJS directives. </p>
+                <span class="label label-danger">NOTE:</span> All Metronic features from the HTML version(pages, layout options, components, plugins, etc) are fully compatible in the AngularJS version.
+                <p></p>
+            </div>
+            <!-- BEGIN DASHBOARD STATS -->
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat blue">
+                        <div class="visual">
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number"> 1349 </div>
+                            <div class="desc"> New Feedbacks </div>
+                        </div>
+                        <a href="#" class="more"> View more
+                            <i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat red">
+                        <div class="visual">
+                            <i class="fa fa-bar-chart-o"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number"> 12,5M$ </div>
+                            <div class="desc"> Total Profit </div>
+                        </div>
+                        <a href="#" class="more"> View more
+                            <i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat green">
+                        <div class="visual">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number"> 549 </div>
+                            <div class="desc"> New Orders </div>
+                        </div>
+                        <a href="#" class="more"> View more
+                            <i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat purple">
+                        <div class="visual">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number"> +89% </div>
+                            <div class="desc"> Brand Popularity </div>
+                        </div>
+                        <a href="#" class="more"> View more
+                            <i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- END DASHBOARD STATS -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <!-- BEGIN PORTLET-->
+                    <div class="portlet light bordered ">
+                        <div class="portlet-title">
+                            <div class="caption caption-md">
+                                <i class="icon-settings font-green"></i>
+                                <span class="caption-subject font-green bold uppercase">Sales Summary</span>
+                                <span class="caption-helper hide">weekly stats...</span>
+                            </div>
+                            <div class="actions">
+                                <div data-toggle="buttons" class="btn-group btn-group-devided">
+                                    <label class="btn dark btn-outline btn-circle btn-sm active">
+                                        <input type="radio" id="option1" class="toggle" name="options">Today</label>
+                                    <label class="btn dark btn-outline btn-circle btn-sm">
+                                        <input type="radio" id="option2" class="toggle" name="options">Week</label>
+                                    <label class="btn dark btn-outline btn-circle btn-sm">
+                                        <input type="radio" id="option2" class="toggle" name="options">Month</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="row list-separated">
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="font-grey-mint font-sm"> Total Sales </div>
+                                    <div class="uppercase font-hg font-red-flamingo"> 13760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="font-grey-mint font-sm"> Revenue </div>
+                                    <div class="uppercase font-hg font-green"> 4760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="font-grey-mint font-sm"> Expenses </div>
+                                    <div class="uppercase font-hg font-purple"> 1760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="font-grey-mint font-sm"> Growth </div>
+                                    <div class="uppercase font-hg font-blue"> 9760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-separated list-inline-xs hide">
+                                <li>
+                                    <div class="font-grey-mint font-sm"> Total Sales </div>
+                                    <div class="uppercase font-hg font-red-flamingo"> 13760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </li>
+                                <li> </li>
+                                <li class="border">
+                                    <div class="font-grey-mint font-sm"> Revenue </div>
+                                    <div class="uppercase font-hg font-green"> 4760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <div class="font-grey-mint font-sm"> Expenses </div>
+                                    <div class="uppercase font-hg font-purple"> 1760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <div class="font-grey-mint font-sm"> Growth </div>
+                                    <div class="uppercase font-hg font-blue"> 9760
+                                        <span class="font-lg font-grey-mint">$</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div style="height: 260px; position: relative;" class="portlet-body-morris-fit morris-chart" id="sales_statistics"><svg height="260" version="1.1" width="510" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; top: -0.31665px;"><desc>Created with Raphaël 2.1.2</desc><defs/><path style="" fill="none" stroke="none" d="M0,260H510" stroke-width="0.5"/><path style="" fill="none" stroke="none" d="M0,195H510" stroke-width="0.5"/><path style="" fill="none" stroke="none" d="M0,130H510" stroke-width="0.5"/><path style="" fill="none" stroke="none" d="M0,65H510" stroke-width="0.5"/><path style="" fill="none" stroke="none" d="M0,0H510" stroke-width="0.5"/><path style="fill-opacity: 1;" fill="#e3f5f3" stroke="none" d="M0,104C32.049180327868854,106.16666666666666,96.14754098360656,115.91666666666666,128.19672131147541,112.66666666666666C160.24590163934425,109.41666666666666,224.344262295082,76.91049874743794,256.39344262295083,78C288.07974726775956,79.07716541410461,351.4523565573771,124.04042658730157,383.1386612021858,121.33333333333331C414.85399590163934,118.6237599206349,478.28466530054646,72.58333333333331,510,56.333333333333314L510,260L0,260Z" fill-opacity="1"/><path style="" fill="none" stroke="#92e9dc" d="M0,104C32.049180327868854,106.16666666666666,96.14754098360656,115.91666666666666,128.19672131147541,112.66666666666666C160.24590163934425,109.41666666666666,224.344262295082,76.91049874743794,256.39344262295083,78C288.07974726775956,79.07716541410461,351.4523565573771,124.04042658730157,383.1386612021858,121.33333333333331C414.85399590163934,118.6237599206349,478.28466530054646,72.58333333333331,510,56.333333333333314" stroke-width="0"/><circle cx="0" cy="104" r="0" fill="#92e9dc" stroke="#ffffff" style="" stroke-width="1"/><circle cx="128.19672131147541" cy="112.66666666666666" r="0" fill="#92e9dc" stroke="#ffffff" style="" stroke-width="1"/><circle cx="256.39344262295083" cy="78" r="0" fill="#92e9dc" stroke="#ffffff" style="" stroke-width="1"/><circle cx="383.1386612021858" cy="121.33333333333331" r="0" fill="#92e9dc" stroke="#ffffff" style="" stroke-width="1"/><circle cx="510" cy="56.333333333333314" r="0" fill="#92e9dc" stroke="#ffffff" style="" stroke-width="1"/><path style="fill-opacity: 1;" fill="#59aea2" stroke="none" d="M0,138.66666666666666C32.049180327868854,145.16666666666666,96.14754098360656,166.83333333333331,128.19672131147541,164.66666666666666C160.24590163934425,162.5,224.344262295082,122.42283458589537,256.39344262295083,121.33333333333331C288.07974726775956,120.2561679192287,351.4523565573771,155.45858134920636,383.1386612021858,156C414.85399590163934,156.5419146825397,478.28466530054646,133.25,510,125.66666666666666L510,260L0,260Z" fill-opacity="1"/><path style="" fill="none" stroke="#399a8c" d="M0,138.66666666666666C32.049180327868854,145.16666666666666,96.14754098360656,166.83333333333331,128.19672131147541,164.66666666666666C160.24590163934425,162.5,224.344262295082,122.42283458589537,256.39344262295083,121.33333333333331C288.07974726775956,120.2561679192287,351.4523565573771,155.45858134920636,383.1386612021858,156C414.85399590163934,156.5419146825397,478.28466530054646,133.25,510,125.66666666666666" stroke-width="0"/><circle cx="0" cy="138.66666666666666" r="0" fill="#399a8c" stroke="#ffffff" style="" stroke-width="1"/><circle cx="128.19672131147541" cy="164.66666666666666" r="0" fill="#399a8c" stroke="#ffffff" style="" stroke-width="1"/><circle cx="256.39344262295083" cy="121.33333333333331" r="0" fill="#399a8c" stroke="#ffffff" style="" stroke-width="1"/><circle cx="383.1386612021858" cy="156" r="0" fill="#399a8c" stroke="#ffffff" style="" stroke-width="1"/><circle cx="510" cy="125.66666666666666" r="0" fill="#399a8c" stroke="#ffffff" style="" stroke-width="1"/></svg> <div class="morris-hover morris-default-style" style="display: none;"></div></div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET-->
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <!-- BEGIN PORTLET-->
+                    <div class="portlet light bordered ">
+                        <div class="portlet-title">
+                            <div class="caption caption-md">
+                                <i class="icon-bar-chart font-red"></i>
+                                <span class="caption-subject font-red bold uppercase">Member Activity</span>
+                                <span class="caption-helper hide">weekly stats...</span>
+                            </div>
+                            <div class="actions">
+                                <div data-toggle="buttons" class="btn-group btn-group-devided">
+                                    <label class="btn green btn-outline btn-circle btn-sm active">
+                                        <input type="radio" id="option1" class="toggle" name="options">Today</label>
+                                    <label class="btn red btn-outline btn-circle btn-sm">
+                                        <input type="radio" id="option2" class="toggle" name="options">Week</label>
+                                    <label class="btn blue btn-outline btn-circle btn-sm">
+                                        <input type="radio" id="option2" class="toggle" name="options">Month</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="row number-stats margin-bottom-30">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <div class="stat-left">
+                                        <div class="stat-chart">
+                                            <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
+                                            <div id="sparkline_bar"><canvas style="display: inline-block; width: 113px; height: 55px; vertical-align: top;" width="113" height="55"></canvas></div>
+                                        </div>
+                                        <div class="stat-number">
+                                            <div class="title"> Total </div>
+                                            <div class="number"> 2460 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <div class="stat-right">
+                                        <div class="stat-chart">
+                                            <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
+                                            <div id="sparkline_bar2"><canvas style="display: inline-block; width: 107px; height: 55px; vertical-align: top;" width="107" height="55"></canvas></div>
+                                        </div>
+                                        <div class="stat-number">
+                                            <div class="title"> New </div>
+                                            <div class="number"> 719 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-scrollable table-scrollable-borderless">
+                                <table class="table table-hover table-light">
+                                    <thead>
+                                    <tr class="uppercase">
+                                        <th colspan="2"> MEMBER </th>
+                                        <th> Earnings </th>
+                                        <th> CASES </th>
+                                        <th> CLOSED </th>
+                                        <th> RATE </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody><tr>
+                                        <td class="fit">
+                                            <img src="../assets/pages/media/users/avatar4.jpg" class="user-pic rounded"> </td>
+                                        <td>
+                                            <a class="primary-link" href="javascript:;">Brain</a>
+                                        </td>
+                                        <td> $345 </td>
+                                        <td> 45 </td>
+                                        <td> 124 </td>
+                                        <td>
+                                            <span class="bold font-green">80%</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fit">
+                                            <img src="../assets/pages/media/users/avatar5.jpg" class="user-pic rounded"> </td>
+                                        <td>
+                                            <a class="primary-link" href="javascript:;">Nick</a>
+                                        </td>
+                                        <td> $560 </td>
+                                        <td> 12 </td>
+                                        <td> 24 </td>
+                                        <td>
+                                            <span class="bold font-green">67%</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fit">
+                                            <img src="../assets/pages/media/users/avatar6.jpg" class="user-pic rounded"> </td>
+                                        <td>
+                                            <a class="primary-link" href="javascript:;">Tim</a>
+                                        </td>
+                                        <td> $1,345 </td>
+                                        <td> 450 </td>
+                                        <td> 46 </td>
+                                        <td>
+                                            <span class="bold font-green">98%</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fit">
+                                            <img src="../assets/pages/media/users/avatar7.jpg" class="user-pic rounded"> </td>
+                                        <td>
+                                            <a class="primary-link" href="javascript:;">Tom</a>
+                                        </td>
+                                        <td> $645 </td>
+                                        <td> 50 </td>
+                                        <td> 89 </td>
+                                        <td>
+                                            <span class="bold font-green">58%</span>
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <!-- BEGIN PORTLET-->
+                    <div class="portlet light bordered tasks-widget">
+                        <div class="portlet-title">
+                            <div class="caption caption-md">
+                                <i class="icon-bar-chart font-green hide"></i>
+                                <span class="caption-subject font-green bold uppercase">TASKS</span>
+                                <span class="caption-helper">16 pending</span>
+                            </div>
+                            <div class="inputs">
+                                <div class="portlet-input input-small input-inline">
+                                    <div class="input-icon right">
+                                        <i class="icon-magnifier"></i>
+                                        <input type="text" placeholder="search..." class="form-control form-control-solid"> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="task-content">
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 282px;"><div data-handle-color="#D7DCE2" data-rail-visible1="0" data-always-visible="1" style="height: 282px; overflow: hidden; width: auto;" class="scroller" data-initialized="1">
+                                    <!-- START TASK LIST -->
+                                    <ul class="task-list">
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <input type="hidden" name="test" value="1">
+                                                <div class="checker"><span><input type="checkbox" name="test" value="2" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> Present 2013 Year IPO Statistics at Board Meeting </span>
+                                                <span class="label label-sm label-success">Company</span>
+                                        <span class="task-bell">
+                                            <i class="fa fa-bell-o"></i>
+                                        </span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> Hold An Interview for Marketing Manager Position </span>
+                                                <span class="label label-sm label-danger">Marketing</span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> AirAsia Intranet System Project Internal Meeting </span>
+                                                <span class="label label-sm label-success">AirAsia</span>
+                                        <span class="task-bell">
+                                            <i class="fa fa-bell-o"></i>
+                                        </span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> Technical Management Meeting </span>
+                                                <span class="label label-sm label-warning">Company</span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> Kick-off Company CRM Mobile App Development </span>
+                                                <span class="label label-sm label-info">Internal Products</span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> Prepare Commercial Offer For SmartVision Website Rewamp </span>
+                                                <span class="label label-sm label-danger">SmartVision</span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> Sign-Off The Comercial Agreement With AutoSmart </span>
+                                                <span class="label label-sm label-default">AutoSmart</span>
+                                        <span class="task-bell">
+                                            <i class="fa fa-bell-o"></i>
+                                        </span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> Company Staff Meeting </span>
+                                                <span class="label label-sm label-success">Cruise</span>
+                                        <span class="task-bell">
+                                            <i class="fa fa-bell-o"></i>
+                                        </span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="last-line">
+                                            <div class="task-checkbox">
+                                                <div class="checker"><span><input type="checkbox" value="" class="liChild"></span></div> </div>
+                                            <div class="task-title">
+                                                <span class="task-title-sp"> KeenThemes Investment Discussion </span>
+                                                <span class="label label-sm label-warning">KeenThemes </span>
+                                            </div>
+                                            <div class="task-config">
+                                                <div class="task-config-btn btn-group">
+                                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="javascript:;" class="btn btn-xs default">
+                                                        <i class="fa fa-cog"></i>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-check"></i> Complete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-pencil"></i> Edit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <i class="fa fa-trash-o"></i> Cancel </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- END START TASK LIST -->
+                                </div><div class="slimScrollBar" style="background: rgb(215, 220, 226) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 185.804px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                            </div>
+                            <div class="task-footer">
+                                <div class="btn-arrow-link pull-right">
+                                    <a href="javascript:;">See All Tasks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET-->
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <!-- BEGIN PORTLET-->
+                    <div class="portlet light bordered">
+                        <div class="portlet-title tabbable-line">
+                            <div class="caption caption-md">
+                                <i class="icon-globe font-green hide"></i>
+                                <span class="caption-subject font-green bold uppercase">Feeds</span>
+                            </div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab" data-target="#tab_1_1" href="#"> System </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" data-target="#tab_1_2" href="#"> Activities </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portlet-body">
+                            <!--BEGIN TABS-->
+                            <div class="tab-content">
+                                <div id="tab_1_1" class="tab-pane active">
+                                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 306px;"><div data-handle-color="#D7DCE2" data-rail-visible1="0" data-always-visible="1" style="height: 306px; overflow: hidden; width: auto;" class="scroller" data-initialized="1">
+                                        <ul class="feeds">
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-success">
+                                                                <i class="fa fa-bell-o"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> You have 4 pending tasks.
+                                                        <span class="label label-sm label-info"> Take action
+                                                            <i class="fa fa-share"></i>
+                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> Just now </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New version v1.4 just lunched! </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> 20 mins </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-danger">
+                                                                <i class="fa fa-bolt"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Database server #12 overloaded. Please fix the issue. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 24 mins </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-info">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> New order received and pending for process. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 30 mins </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-success">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> New payment refund and pending approval. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 40 mins </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-warning">
+                                                                <i class="fa fa-plus"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> New member registered. Pending approval. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 1.5 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-success">
+                                                                <i class="fa fa-bell-o"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Web server hardware needs to be upgraded.
+                                                                <span class="label label-sm label-default "> Overdue </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 2 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-default">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Prod01 database server is overloaded 90%. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 3 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-warning">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> New group created. Pending manager review. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 5 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-info">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Order payment failed. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 18 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-default">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> New application received. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 21 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-info">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Dev90 web server restarted. Pending overall system check. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 22 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-default">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> New member registered. Pending approval </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 21 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-info">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> L45 Network failure. Schedule maintenance. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 22 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-default">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Order canceled with failed payment. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 21 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-info">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Web-A2 clound instance created. Schedule full scan. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 22 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-default">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Member canceled. Schedule account review. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 21 hours </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-info">
+                                                                <i class="fa fa-bullhorn"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> New order received. Please take care of it. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 22 hours </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div><div class="slimScrollBar" style="background: rgb(215, 220, 226) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 137.498px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                </div>
+                                <div id="tab_1_2" class="tab-pane">
+                                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 337px;"><div data-handle-color="#D7DCE2" data-rail-visible1="0" data-always-visible="1" style="height: 337px; overflow: hidden; width: auto;" class="scroller" data-initialized="1">
+                                        <ul class="feeds">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New order received </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> 10 mins </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="col1">
+                                                    <div class="cont">
+                                                        <div class="cont-col1">
+                                                            <div class="label label-sm label-danger">
+                                                                <i class="fa fa-bolt"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cont-col2">
+                                                            <div class="desc"> Order #24DOP4 has been rejected.
+                                                        <span class="label label-sm label-danger "> Take action
+                                                            <i class="fa fa-share"></i>
+                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="date"> 24 mins </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="col1">
+                                                        <div class="cont">
+                                                            <div class="cont-col1">
+                                                                <div class="label label-sm label-success">
+                                                                    <i class="fa fa-bell-o"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cont-col2">
+                                                                <div class="desc"> New user registered </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col2">
+                                                        <div class="date"> Just now </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div><div class="slimScrollBar" style="background: rgb(215, 220, 226) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                </div>
+                            </div>
+                            <!--END TABS-->
+                        </div>
+                    </div>
+                    <!-- END PORTLET-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <!-- BEGIN REGIONAL STATS PORTLET-->
+                    <div class="portlet light bordered ">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="icon-share font-green"></i>
+                                <span class="caption-subject font-green bold uppercase">Recent Activities</span>
+                            </div>
+                            <div class="actions">
+                                <div class="btn-group">
+                                    <a data-close-others="true" dropdown-menu-hover="" data-toggle="dropdown" href="#" class="btn btn-sm btn-default btn-circle"> Filter By
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
+                                        <label>
+                                            <div class="checker"><span><input type="checkbox"></span></div> Finance</label>
+                                        <label>
+                                            <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div> Membership</label>
+                                        <label>
+                                            <div class="checker"><span><input type="checkbox"></span></div> Customer Support</label>
+                                        <label>
+                                            <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div> HR</label>
+                                        <label>
+                                            <div class="checker"><span><input type="checkbox"></span></div> System</label>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-circle btn-icon-only btn-default fullscreen" data-original-title="" title=""> </a>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div data-rail-visible="0" data-always-visible="1" style="height: 300px; overflow: hidden; width: auto;" class="scroller" data-initialized="1">
+                                <ul class="feeds">
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-info">
+                                                        <i class="fa fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 4 pending tasks.
+                                                <span class="label label-sm label-warning "> Take action
+                                                    <i class="fa fa-share"></i>
+                                                </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> Just now </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="col1">
+                                                <div class="cont">
+                                                    <div class="cont-col1">
+                                                        <div class="label label-sm label-success">
+                                                            <i class="fa fa-bar-chart-o"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cont-col2">
+                                                        <div class="desc"> Finance Report for year 2013 has been released. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="date"> 20 mins </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-danger">
+                                                        <i class="fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 24 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-info">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> New order received with
+                                                        <span class="label label-sm label-success"> Reference Number: DR23923 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 30 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-success">
+                                                        <i class="fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 24 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-default">
+                                                        <i class="fa fa-bell-o"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> Web server hardware needs to be upgraded.
+                                                        <span class="label label-sm label-default "> Overdue </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 2 hours </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="col1">
+                                                <div class="cont">
+                                                    <div class="cont-col1">
+                                                        <div class="label label-sm label-default">
+                                                            <i class="fa fa-briefcase"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cont-col2">
+                                                        <div class="desc"> IPO Report for year 2013 has been released. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="date"> 20 mins </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-info">
+                                                        <i class="fa fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 4 pending tasks.
+                                                <span class="label label-sm label-warning "> Take action
+                                                    <i class="fa fa-share"></i>
+                                                </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> Just now </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="col1">
+                                                <div class="cont">
+                                                    <div class="cont-col1">
+                                                        <div class="label label-sm label-danger">
+                                                            <i class="fa fa-bar-chart-o"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cont-col2">
+                                                        <div class="desc"> Finance Report for year 2013 has been released. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="date"> 20 mins </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-default">
+                                                        <i class="fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 24 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-info">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> New order received with
+                                                        <span class="label label-sm label-success"> Reference Number: DR23923 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 30 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-success">
+                                                        <i class="fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 24 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-warning">
+                                                        <i class="fa fa-bell-o"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> Web server hardware needs to be upgraded.
+                                                        <span class="label label-sm label-default "> Overdue </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 2 hours </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="col1">
+                                                <div class="cont">
+                                                    <div class="cont-col1">
+                                                        <div class="label label-sm label-info">
+                                                            <i class="fa fa-briefcase"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cont-col2">
+                                                        <div class="desc"> IPO Report for year 2013 has been released. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="date"> 20 mins </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><div class="slimScrollBar" style="background: rgb(187, 187, 187) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 145.867px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                            <div class="scroller-footer">
+                                <div class="btn-arrow-link pull-right">
+                                    <a href="#">See All Records</a>
+                                    <i class="icon-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END REGIONAL STATS PORTLET-->
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <!-- BEGIN PORTLET-->
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption caption-md">
+                                <i class="icon-bar-chart font-green"></i>
+                                <span class="caption-subject font-green bold uppercase">Customer Support</span>
+                                <span class="caption-helper">45 pending</span>
+                            </div>
+                            <div class="inputs">
+                                <div class="portlet-input input-inline input-small ">
+                                    <div class="input-icon right">
+                                        <i class="icon-magnifier"></i>
+                                        <input type="text" placeholder="search..." class="form-control form-control-solid input-circle"> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 329px;"><div data-handle-color="#D7DCE2" data-rail-visible1="0" data-always-visible="1" style="height: 329px; overflow: hidden; width: auto;" class="scroller" data-initialized="1">
+                                <div class="general-item-list">
+                                    <div class="item">
+                                        <div class="item-head">
+                                            <div class="item-details">
+                                                <img src="../assets/pages/media/users/avatar4.jpg" class="item-pic rounded">
+                                                <a class="item-name primary-link" href="">Nick Larson</a>
+                                                <span class="item-label">3 hrs ago</span>
+                                            </div>
+                                    <span class="item-status">
+                                        <span class="badge badge-empty badge-success"></span> Open</span>
+                                        </div>
+                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-head">
+                                            <div class="item-details">
+                                                <img src="../assets/pages/media/users/avatar3.jpg" class="item-pic rounded">
+                                                <a class="item-name primary-link" href="">Mark</a>
+                                                <span class="item-label">5 hrs ago</span>
+                                            </div>
+                                    <span class="item-status">
+                                        <span class="badge badge-empty badge-warning"></span> Pending</span>
+                                        </div>
+                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat tincidunt ut laoreet. </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-head">
+                                            <div class="item-details">
+                                                <img src="../assets/pages/media/users/avatar6.jpg" class="item-pic rounded">
+                                                <a class="item-name primary-link" href="">Nick Larson</a>
+                                                <span class="item-label">8 hrs ago</span>
+                                            </div>
+                                    <span class="item-status">
+                                        <span class="badge badge-empty badge-primary"></span> Closed</span>
+                                        </div>
+                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-head">
+                                            <div class="item-details">
+                                                <img src="../assets/pages/media/users/avatar7.jpg" class="item-pic rounded">
+                                                <a class="item-name primary-link" href="">Nick Larson</a>
+                                                <span class="item-label">12 hrs ago</span>
+                                            </div>
+                                    <span class="item-status">
+                                        <span class="badge badge-empty badge-danger"></span> Pending</span>
+                                        </div>
+                                        <div class="item-body"> Consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-head">
+                                            <div class="item-details">
+                                                <img src="../assets/pages/media/users/avatar9.jpg" class="item-pic rounded">
+                                                <a class="item-name primary-link" href="">Richard Stone</a>
+                                                <span class="item-label">2 days ago</span>
+                                            </div>
+                                    <span class="item-status">
+                                        <span class="badge badge-empty badge-danger"></span> Open</span>
+                                        </div>
+                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ut laoreet dolore magna aliquam erat volutpat. </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-head">
+                                            <div class="item-details">
+                                                <img src="../assets/pages/media/users/avatar8.jpg" class="item-pic rounded">
+                                                <a class="item-name primary-link" href="">Dan</a>
+                                                <span class="item-label">3 days ago</span>
+                                            </div>
+                                    <span class="item-status">
+                                        <span class="badge badge-empty badge-warning"></span> Pending</span>
+                                        </div>
+                                        <div class="item-body"> Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-head">
+                                            <div class="item-details">
+                                                <img src="../assets/pages/media/users/avatar2.jpg" class="item-pic rounded">
+                                                <a class="item-name primary-link" href="">Larry</a>
+                                                <span class="item-label">4 hrs ago</span>
+                                            </div>
+                                    <span class="item-status">
+                                        <span class="badge badge-empty badge-success"></span> Open</span>
+                                        </div>
+                                        <div class="item-body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+                                    </div>
+                                </div>
+                            </div><div class="slimScrollBar" style="background: rgb(215, 220, 226) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 137.711px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET-->
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+        <!-- BEGIN MAIN JS & CSS -->
+        <script class="ng-scope">
+            Dashboard.init();
+        </script>
+        <!-- BEGIN MAIN JS & CSS --></div>
+        <!-- END ACTUAL CONTENT -->
+    </div>
+</div>
